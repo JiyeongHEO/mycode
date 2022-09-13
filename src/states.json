@@ -1,0 +1,45 @@
+{
+    "showFMEAClassification": {
+        "controller": "NativeSubLocationCtrl",
+        "data": {
+            "priority": 1,
+            "label": {
+                "source": "/i18n/lgspFMEAMessages",
+                "key": "FMEAClassificationTitle"
+            },
+            "clientScopeURI": "Awp0SearchResults",
+            "nameToken": "showFMEAClassification",
+            "viewModes": {
+                "TreeView": {
+                  "primaryWorkArea": "tree",
+                  "secondaryWorkArea": false
+                },
+                "TreeSummaryView": {
+                  "primaryWorkArea": "tree",
+                  "secondaryWorkArea": true
+                }
+              },
+            "viewBase": "showFMEAClassification",
+            "defaultDisplayMode": "TreeSummaryView",
+            "context": {
+                "search": {
+                    "chartTitle": {
+                        "source": "/i18n/lgspFMEAMessages",
+                        "key": "FMEAClassificationTitle"
+                    }
+                }
+            }
+        },
+        "dependencies": [
+            "js/aw.native.sublocation.controller"
+        ],
+        "params": {
+            "filter": null
+        },
+        "parent": "MasterDataLoc2",
+        "reloadOnSearch": false,
+        "templateUrl": "/html/aw.native.sublocation.html",
+        "type": "subLocation",
+        "url": "/FMEAclassification"
+    }
+}
